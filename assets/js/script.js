@@ -78,10 +78,10 @@ function printResults(resultObj) {
 }
 
 function searchApi(query, format) {
-  var locQueryUrl = 'https://www.loc.gov/search/?fo=json';
+  var locQueryUrl = 'https://openweathermap.org/?fo=json';
 
   if (format) {
-    locQueryUrl = 'https://www.loc.gov/' + format + '/?fo=json';
+    locQueryUrl = 'https://openweathermap.org/' + format + '/?fo=json';
   }
 
   locQueryUrl = locQueryUrl + '&q=' + query;
