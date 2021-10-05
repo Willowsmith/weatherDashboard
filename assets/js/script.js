@@ -78,10 +78,10 @@ function printResults(resultObj) {
 }
 
 function searchApi(query, format) {
-  var locQueryUrl = 'https://openweathermap.org/?fo=json';
+  var locQueryUrl = 'https://openweathermap.org/api/one-call-api/?fo=json';
 
   if (format) {
-    locQueryUrl = 'https://openweathermap.org/' + format + '/?fo=json';
+    locQueryUrl = 'https://openweathermap.org/api/one-call-api/' + format + '/?fo=json';
   }
 
   locQueryUrl = locQueryUrl + '&q=' + query;
